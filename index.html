@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/**
+		 * @Container 
+		 * @Values : grid | inline-grid;
+		 */
+		.wrapper{
+			display: grid;
+		}
+		/**
+		 * @Column Template For Grid
+		 * @Values : track-size | line-name track-size;
+		 * [auto] = automatically assigned positive and negative numbers
+		 * [fr] = set the size of a track as a fraction of the free space of the grid container
+		 * repeat(a, b | a, b[c]) = definition contains repeating parts
+		 * 	=> a = number of times to repeat
+		 *	   b = track-size to be repeated
+		 *     c = line-name
+		 *
+		 * @Example -
+		 * 
+		 * 1) grid-template-columns: 40px 50px;
+		 *
+		 * 2) grid-template-columns: 40% 50% auto;
+		 * 
+		 * 3) grid-template-columns: 1fr 2fr 1 fr;
+		 *
+		 * 4) grid-template-columns: repeat(4, 2fr);
+		 *
+		 * 5) grid-template-columns: repeat(3, 20px [col-start]);
+		 */
+		.template-column{
+			grid-template-columns: 1fr 2fr 1fr;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper template-column">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	</div>
+</body>
+</html>
